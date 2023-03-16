@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.full {
+    display: flex;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 3px 16px rgb(218, 217, 217);
+    border-radius: 1.5rem;
+}
+.left {
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)) ;
+    color: white;
+    padding:2rem 2rem;
+    border-radius: 1.5rem;
+}
+.result {
+    margin: 0 0 1.5rem 0 ;
+    letter-spacing: .5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: hsla(0, 0%, 100%, 0.575);
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.circle h1 {
+    font-size: 4rem;
+}
+.info h3 {
+    margin-top: 1.8rem;
+    margin-bottom: .7rem;
+}
+.info p {
+    margin: 0 .6rem;
+    color: rgba(255, 255, 255, 0.589);
+}
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 1.2rem 2rem;
+}
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+    border-radius: 10px;
+    margin: .5rem 0rem;
+}
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+}
+.btn {
+    margin-top: .5rem;
+    padding: .9rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(41, 41, 54);
+    color: white;
+}
+.row:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.099);
+}
+.row:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.099);
+}
+.row:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.099);
+}
+.row:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.099);
+}
+.row:nth-child(1) .badge b {
+    color: hsl(0, 100%, 67%);
+}
+.row:nth-child(2) .badge b {
+   color: hsl(39, 100%, 56%);
+}
+.row:nth-child(3) .badge b {
+   color: hsl(166, 100%, 37%);
+}
+.row:nth-child(4) .badge b {
+   color: hsl(234, 85%, 45%);
+}
+@media screen and (max-width:570px) {
+    .full {
+      flex-direction: column;
+      height: 100%;
+      box-shadow: none;
+    }
+    .left {
+        width: 100%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    .left > .info > p {
+        font-size: 1.18rem;
+    }
+    .info > h3 {
+      font-size: 1.5rem;
+      letter-spacing: .7px;
+    }
+    .right {
+        width: 100%;
+    }
+}
