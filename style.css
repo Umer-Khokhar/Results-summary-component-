@@ -89,16 +89,16 @@ body {
     color: white;
 }
 .row:nth-child(1) {
-    background-color: hsla(0, 100%, 67%, 0.099);
+    background-color: hsla(0, 100%, 67%, 0.088);
 }
 .row:nth-child(2) {
-  background-color: hsla(39, 100%, 56%, 0.099);
+  background-color: hsla(39, 100%, 56%, 0.088);
 }
 .row:nth-child(3) {
-  background-color: hsla(166, 100%, 37%, 0.099);
+  background-color: hsla(166, 100%, 37%, 0.088);
 }
 .row:nth-child(4) {
-  background-color: hsla(234, 85%, 45%, 0.099);
+  background-color: hsla(234, 85%, 45%, 0.088);
 }
 .row:nth-child(1) .badge b {
     color: hsl(0, 100%, 67%);
